@@ -24,3 +24,8 @@ After running
 ```
 from relative_consistency import relative_consistency
 ```
+to import the function, simply run
+```
+relative_consistency(n,a,c)
+```
+where n is the total number of pairs, a is the number of accurate instances, and c is the number of consistent pairs

@@ -60,5 +60,13 @@ def relative_consistency(n,a,c):
     '''
     The Relative Consistency score of a model's performance
     Intuitively, this approximates the probability that a model with the same accuracy will achieve a better consistency than this model
+
+    Parameters
+    n (int): the total number of pairs in the dataset
+    a (int): the number of accurate instances (accuracy)
+    c (int): the number of consistent pairs (consistency), must be in the interval [min_c(n,a), max_c(n,a)]
+
+    Returns:
+    int: the Relative Consistency score of a model's performance
     '''
     return sum(mass(n,a,i) for i in range(c+1)) / total_mass(n,a)
