@@ -142,7 +142,7 @@ def compute_consistency(pred_file, data_file, label_key="label"):
         consistency_dict[key]["consistency"] = (consistency_dict[key]["correct"] * 100.0 / consistency_dict[key]["total"]) if consistency_dict[key]["total"] != 0 else 100 # # # avoid division by 0 in testing
         accuracy_dict   [key]['accuracy']    = (accuracy_dict[key]["correct"]    * 100.0 / accuracy_dict[key]["total"])    if accuracy_dict[key]["total"]    != 0 else 100
 
-    return consistency_dict["all"]["consistency"], consistency_dict["0-1"]["consistency"], consistency_dict["0-1"]["consistency"], consistency_dict["0-3"]["consistency"
+    return consistency_dict["all"]["consistency"], consistency_dict["0-1"]["consistency"], consistency_dict["0-2"]["consistency"], consistency_dict["0-3"]["consistency"
         ], accuracy_dict   ["all"]["accuracy"],    accuracy_dict   ["0-1"]["accuracy"],     accuracy_dict  ["0-2"]["accuracy"]   , accuracy_dict   ["0-3"]["accuracy"]
 
 
